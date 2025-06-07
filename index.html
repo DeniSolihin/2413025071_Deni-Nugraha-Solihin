@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Grafika Komputer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .forum {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .forum:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .forum h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        
+        .task {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eaeaea;
+        }
+        
+        .task:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .task h3 {
+            margin: 0 0 10px 0;
+            color: #3498db;
+        }
+        
+        .task p {
+            margin: 8px 0;
+            color: #555;
+        }
+        
+        .task a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .task a:hover {
+            background-color: #2980b9;
+        }
+        
+        .deadline {
+            font-size: 0.9em;
+            color: #e74c3c;
+            font-weight: bold;
+            background-color: #fdeaea;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Forum Tugas Grafika Komputer</h1>
+        <p>Materi dan Tugas Mata Kuliah Grafika Komputer</p>
+    </div>
+    
+    <div class="container">
+        <!-- Forum 1 -->
+        <div class="forum">
+            <h2>Tokoh Perintis Grafika Komputer</h2>
+            
+            <div class="task">
+                <h3>Biografi Ivan Sutherland</h3>
+                <p>Pelajari dan buat ringkasan tentang kontribusi Ivan Sutherland dalam perkembangan grafika komputer.</p>
+                <p><span class="deadline">Deadline: 10 Juni 2023</span></p>
+                <a href="#">Lihat Materi</a>
+            </div>
+            
+            <div class="task">
+                <h3>Perkembangan Awal Sketchpad</h3>
+                <p>Analisis perkembangan sistem Sketchpad dan pengaruhnya terhadap teknologi modern.</p>
+                <p><span class="deadline">Deadline: 15 Juni 2023</span></p>
+                <a href="#">Lihat Tugas</a>
+            </div>
+        </div>
+        
+        <!-- Forum 2 -->
+        <div class="forum">
+            <h2>Algoritma Pembentukan Garis</h2>
+            
+            <div class="task">
+                <h3>DDA Line Algorithm</h3>
+                <p>Implementasikan algoritma DDA untuk menggambar garis dalam bahasa pemrograman pilihan Anda.</p>
+                <p><span class="deadline">Deadline: 12 Juni 2023</span></p>
+                <a href="#">Download Materi</a>
+            </div>
+            
+            <div class="task">
+                <h3>Bresenham's Line Algorithm</h3>
+                <p>Bandingkan hasil implementasi algoritma Bresenham dengan algoritma DDA.</p>
+                <p><span class="deadline">Deadline: 17 Juni 2023</span></p>
+                <a href="#">Lihat Petunjuk</a>
+            </div>
+        </div>
+        
+        <!-- Forum 3 -->
+        <div class="forum">
+            <h2>Kuis 1 Persamaan Misteri</h2>
+            
+            <div class="task">
+                <h3>Persamaan Parametrik</h3>
+                <p>Jawab pertanyaan tentang persamaan parametrik untuk kurva tertentu.</p>
+                <p><span class="deadline">Deadline: 14 Juni 2023</span></p>
+                <a href="#">Mulai Kuis</a>
+            </div>
+            
+            <div class="task">
+                <h3>Kuis Singkat Transformasi</h3>
+                <p>Kuis 10 menit tentang konsep dasar transformasi dalam grafika komputer.</p>
+                <p><span class="deadline">Deadline: 14 Juni 2023</span></p>
+                <a href="#">Instruksi Kuis</a>
+            </div>
+        </div>
+        
+        <!-- Forum 4 -->
+        <div class="forum">
+            <h2>Kuis 2 Transformasi 2D</h2>
+            
+            <div class="task">
+                <h3>Transformasi Dasar</h3>
+                <p>Demonstrasikan operasi translasi, rotasi, dan scaling pada objek 2D.</p>
+                <p><span class="deadline">Deadline: 19 Juni 2023</span></p>
+                <a href="#">Unduh Soal</a>
+            </div>
+            
+            <div class="task">
+                <h3>Komposisi Transformasi</h3>
+                <p>Hitung hasil komposisi beberapa transformasi berturut-turut.</p>
+                <p><span class="deadline">Deadline: 19 Juni 2023</span></p>
+                <a href="#">Contoh Soal</a>
+            </div>
+        </div>
+        
+        <!-- Forum 5 -->
+        <div class="forum">
+            <h2>Kuis 3 Clipping Algorithm</h2>
+            
+            <div class="task">
+                <h3>Cohen-Sutherland Algorithm</h3>
+                <p>Implementasikan algoritma Cohen-Sutherland untuk line clipping.</p>
+                <p><span class="deadline">Deadline: 21 Juni 2023</span></p>
+                <a href="#">Referensi Kode</a>
+            </div>
+            
+            <div class="task">
+                <h3>Liang-Barsky Algorithm</h3>
+                <p>Bandingkan efisiensi algoritma Liang-Barsky dengan Cohen-Sutherland.</p>
+                <p><span class="deadline">Deadline: 21 Juni 2023</span></p>
+                <a href="#">Panduan</a>
+            </div>
+        </div>
+        
+        <!-- Forum 6 -->
+        <div class="forum">
+            <h2>Dispen Tugas Clipping Algoritma Pemotongan Garis</h2>
+            
+            <div class="task">
+                <h3>Pengumpulan Ulang</h3>
+                <p>Bagi yang belum mengumpulkan tugas clipping algoritma, dapat mengumpulkan melalui forum ini.</p>
+                <p><span class="deadline">Deadline: 25 Juni 2023</span></p>
+                <a href="#">Submit Tugas</a>
+            </div>
+            
+            <div class="task">
+                <h3>Revisi Tugas</h3>
+                <p>Upload revisi tugas bagi yang diminta untuk melakukan perbaikan.</p>
+                <p><span class="deadline">Deadline: 25 Juni 2023</span></p>
+                <a href="#">Upload Revisi</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
