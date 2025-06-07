@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio dan Pengumpulan Tugas YouTube</title>
+    <title>Portofolio dan Tugas YouTube</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,10 +11,34 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #FF0000;
+            margin-bottom: 15px;
         }
         h1 {
             color: #FF0000;
-            text-align: center;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            border-bottom: 2px solid #FF0000;
+            padding-bottom: 5px;
         }
         .tugas {
             background: #f9f9f9;
@@ -35,41 +59,32 @@
         .link:hover {
             background: #CC0000;
         }
-        header {
+        footer {
             text-align: center;
-            margin-bottom: 30px;
-        }
-        header img {
-            border-radius: 50%;
-            margin-top: 15px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #FF0000;
-            padding-bottom: 5px;
+            margin-top: 30px;
+            color: #666;
         }
     </style>
 </head>
 <body>
+    <!-- Bagian Foto Profil & Data Diri -->
     <header>
-        <h1>Halo, Saya [Nama Anda]</h1>
-        <img src="foto-profil.jpg" alt="Foto Saya" width="150">
+        <img src="foto-profil.jpg" alt="Foto Profil" class="profile-img">
+        <h1>[Nama Lengkap]</h1>
+        <p class="subtitle">NIM: [Nomor Induk Mahasiswa]</p>
+        <p class="subtitle">Kelas: [Nama Kelas]</p>
     </header>
 
+    <!-- Bagian Tentang Saya -->
     <section>
         <h2>Tentang Saya</h2>
-        <p>Saya seorang web developer pemula.</p>
+        <p>Saya seorang web developer pemula yang sedang belajar HTML, CSS, dan JavaScript. Saya memiliki minat dalam pengembangan front-end dan desain web.</p>
     </section>
 
+    <!-- Bagian Daftar Tugas YouTube -->
     <section>
         <h2>Pengumpulan Tugas YouTube</h2>
-        <p>Nama: [Nama Lengkap]<br>
-        NIM: [Nomor Induk Mahasiswa]<br>
-        Kelas: [Nama Kelas]</p>
-
+        
         <div class="tugas">
             <h3>Tugas 1</h3>
             <p>Deskripsi: [Deskripsi singkat tugas]</p>
@@ -107,7 +122,7 @@
         </div>
     </section>
 
-    <footer style="text-align: center; margin-top: 30px; color: #666;">
+    <footer>
         <p>&copy; 2023 [Nama Anda]</p>
     </footer>
 </body>
