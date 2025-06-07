@@ -3,6 +3,33 @@
 <head>
     <title>Portofolio Saya</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Tambahkan Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Tambahkan style ini */
+        .nav-button {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #2ecc71, #3498db);
+        }
+        
+        .nav-button i {
+            margin-right: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,7 +38,12 @@
     </header>
     <section>
         <h2>Tentang Saya</h2>
-        <p>Saya Seorang Mahasiswa Universitas Lampung Angkatan 2024, Fakulitas Keguruan dan Ilmu Pendidikan, Jurusan Pendidikan Matematika dan Ilmu Pengetahuan Alam, Program Studi Pendidikan Teknologi Informasi.</p>
+        <p>Saya Seorang Mahasiswa Universitas Lampung Angkatan 2024, Fakultas Keguruan dan Ilmu Pendidikan, Jurusan Pendidikan Matematika dan Ilmu Pengetahuan Alam, Program Studi Pendidikan Teknologi Informasi.</p>
+        
+        <!-- Tambahkan tombol navigasi ke forum -->
+        <a href="forum.html" class="nav-button">
+            <i class="fas fa-tasks"></i> Forum Pengumpulan Tugas
+        </a>
     </section>
 </body>
 </html>
